@@ -1,8 +1,36 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "din-2014-narrow";
+  src: url("/fonts/DIN-2014_Narrow-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nimbus-sans";
+  src: url("/fonts/nimbus-sans-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --green-primary: #2A614B;
+
+  --green-100: #A9BFB7;
+  --green-200: #98B2A8;
+  --green-300: #74978A;
+  --green-400: #54806F;
+  --green-500: #3F705D;
+  
+  --black-primary: #1E1E1E;
+  --brown-primary: #C5B8A7;
+  --beige-primary: #F7F4EC;
 }
 
 @theme inline {
@@ -10,6 +38,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-din: "din-2014-narrow", sans-serif;
+  --font-nimbus: "nimbus-sans", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
