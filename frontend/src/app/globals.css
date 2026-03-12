@@ -1,15 +1,57 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "din-2014-narrow";
+  src: url("/fonts/DIN-2014_Narrow-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nimbus-sans";
+  src: url("/fonts/nimbus-sans-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --green-primary: #2A614B;
+
+  --green-100: #A9BFB7;
+  --green-200: #98B2A8;
+  --green-300: #74978A;
+  --green-400: #54806F;
+  --green-500: #3F705D;
+
+  --black-primary: #1E1E1E;
+  --brown-primary: #C5B8A7;
+  --beige-primary: #F7F4EC;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-green-primary: var(--green-primary);
+  --color-black-primary: var(--black-primary);
+  --color-brown-primary: var(--brown-primary);
+  --color-beige-primary: var(--beige-primary);
+
+  --color-green-100: var(--green-100);
+  --color-green-200: var(--green-200);
+  --color-green-300: var(--green-300);
+  --color-green-400: var(--green-400);
+  --color-green-500: var(--green-500);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-din: "din-2014-narrow", sans-serif;
+  --font-nimbus: "nimbus-sans", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +64,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "nimbus-sans", sans-serif;
 }
