@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="min-h-screen w-full">
             <div className="flex bg-foreground p-8 text-black-primary">
-                <img src="https://placehold.co/600x400" alt="placeholder" /> 
+                <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" /> 
                 <div className="flex flex-col gap-2 p-8">
                     <h1 className="p-2">About</h1>
                     <p className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</p>
