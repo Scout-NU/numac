@@ -17,8 +17,10 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F7F4EC;
+  --foreground: #1E1E1E;
+
+  --brown-primary: #C5B8A7;
 
   --green-primary: #2A614B;
 
@@ -27,10 +29,6 @@
   --green-300: #74978A;
   --green-400: #54806F;
   --green-500: #3F705D;
-
-  --black-primary: #1E1E1E;
-  --brown-primary: #C5B8A7;
-  --beige-primary: #F7F4EC;
 }
 
 @theme inline {
@@ -52,13 +50,6 @@
   --font-mono: var(--font-geist-mono);
   --font-din: "din-2014-narrow", sans-serif;
   --font-nimbus: "nimbus-sans", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

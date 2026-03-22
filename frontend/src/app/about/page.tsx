@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <div className="min-h-screen w-full">
-            <div className="flex bg-foreground p-8 text-black-primary">
+            <div className="flex bg-background p-8 text-black-primary">
                 <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" /> 
                 <div className="flex flex-col gap-2 p-8">
                     <h1 className="p-2">About</h1>
@@ -24,7 +24,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="grid bg-foreground p-10 text-black-primary items-center w-full h-full">
+            <div className="grid bg-background p-10 text-black-primary items-center w-full h-full">
                 <div className="flex p-8 justify-center">
                     <h1>Our Values</h1>
                 </div>
@@ -51,7 +51,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="flex bg-foreground p-8 text-black-primary">
+            <div className="flex bg-background p-8 text-black-primary">
             <div className="flex flex-col gap-2 p-8">
                 <h1 className="p-2">The Organization</h1>
                 <p className="p-2">In-depth description about organization</p>
