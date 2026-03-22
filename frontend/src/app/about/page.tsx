@@ -7,7 +7,7 @@ export default function About() {
                 <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" /> 
                 <div className="flex flex-col gap-2 p-8">
                     <h1 className="p-2">About</h1>
-                    <p className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</p>
+                    <h4 className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</h4>
                 </div>
             </div>
             <div className="bg-green-100 relative w-full h-90">
@@ -17,10 +17,10 @@ export default function About() {
                     fill
                     className="object-cover"
                 />
-                <div className="relative z-10 text-black-primary flex flex-col items-center justify-center h-full">
+                <div className="relative z-10 text-black-primary flex flex-col items-center justify-center h-full w-full">
                     <div>
                         <h2 className="p-2">Mission Statement</h2>
-                        <p className="p-2">To help our clients develop distinctive and lasting marketing solutions while empowering our students to learn and grow their marketing skillset​​.</p>
+                        <h3 className="p-2">To help our clients develop distinctive and lasting marketing solutions while empowering our students to learn and grow their marketing skillset​​.</h3>
                     </div>
                 </div>
             </div>
@@ -30,31 +30,31 @@ export default function About() {
                 </div>
                 <div className="flex p-8 items-center justify-center w-full">
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                 </div>
                 <div className="flex p-8 items-center justify-center w-full">
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                     <div className="flex-1">
-                        <p>Description</p>
+                        <h4>Description</h4>
                     </div>
                 </div>
             </div>
             <div className="flex bg-background p-8 text-black-primary">
             <div className="flex flex-col gap-2 p-8">
                 <h1 className="p-2">The Organization</h1>
-                <p className="p-2">In-depth description about organization</p>
+                <h4 className="p-2">In-depth description about organization</h4>
             </div>
             </div>
         </div>
