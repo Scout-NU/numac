@@ -5,8 +5,8 @@ export default function Footer() {
      <div className="flex gap-16 font-sans text-sm mt-[40px]">
        <div className="flex flex-col gap-2">
          <p className="font-sans text-[24px] font-light text-[#F7F4EC] mb-2">Contact</p>
-         <a href="mailto:consults.numac@gmail.com" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">
-           consults.numac@gmail.com
+         <a href="mailto:consultingnuma@gmail.com" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">
+           consultingnuma@gmail.com
          </a>
        </div>
        <div className="flex flex-col gap-[15px]">
