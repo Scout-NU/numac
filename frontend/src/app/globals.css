@@ -58,14 +58,22 @@ body {
   font-family: "nimbus-sans", sans-serif;
 }
 
-h1,h2 {
-  font-family: "din-2014-narrow", sans-serif;
-}
-
 @layer base {
-  h1 { font-size: 40px; }
-  h2 { font-size: 35px; }
-  h3 { font-size: 30px; }
-  h4  { font-size: 24px; }
+  h1 { 
+    font-size: 64px; 
+    color: var(--green-primary);
+    font-family: "din-2014-narrow", sans-serif;
+  }
+  h2 { 
+    font-size: 40px; 
+    color: var(--green-primary);
+    font-family: "din-2014-narrow", sans-serif;
+  }
+  h3 { 
+    font-size: 36px;
+    font-family: "din-2014-narrow", sans-serif;
+  }
+  h4 { font-size: 32px; }
+  h5 { font-size: 24px; }
   p  { font-size: 16px; }
 }

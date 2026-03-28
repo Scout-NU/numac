@@ -2,60 +2,48 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="min-h-screen w-full">
-            <div className="flex bg-background p-8 text-black-primary">
-                <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" /> 
-                <div className="flex flex-col gap-2 p-8">
-                    <h1 className="p-2">About</h1>
-                    <h4 className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</h4>
-                </div>
-            </div>
-            <div className="bg-green-100 relative w-full h-90">
-                <Image
-                    src="/images/about_wave.png"
-                    alt="background"
-                    fill
-                    className="object-cover"
-                />
-                <div className="relative z-10 text-black-primary flex flex-col items-center justify-center h-full w-full p-4">
-                    <div>
-                        <h2 className="p-2">Mission Statement</h2>
-                        <h3 className="p-2">To help our clients develop distinctive and lasting marketing solutions while empowering our students to learn and grow their marketing skillset​​.</h3>
+        <div className="min-h-screen w-full">\
+            <h1 className="pt-10 pl-30">How to Get In Touch</h1>
+            <div className="flex bg-background pl-30 pt-10 pb-30 gap-70">
+                <div className="flex">
+                    <div className="flex h-150 w-3 bg-green-500 rounded-full"></div>
+                    <div className="p-10">
+                        <div>
+                            <h3>For Potential Clients...</h3>
+                            <div className="pt-8">
+                                <div className="text-[20px] pt-4 pb-2">Ready to work with us?</div>
+                                <div className="text-[20px] pt-2 pb-2">Fill Out this Form</div>
+                                <div className="text-[20px] pt-2 pb-2">Email us</div>
+                                <div className="text-[20px] pt-2 pb-2">Connect on LinkedIn</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="grid bg-background p-10 text-black-primary items-center w-full h-full">
-                <div className="flex p-8 justify-center">
-                    <h1>Our Values</h1>
-                </div>
-                <div className="flex p-8 items-center justify-center w-full">
-                    <div className="flex-1">
-                        <h4>Description</h4>
-                    </div>
-                    <div className="flex-1">
-                        <h4>Description</h4>
-                    </div>
-                    <div className="flex-1">
-                        <h4>Description</h4>
-                    </div>
-                </div>
-                <div className="flex p-8 items-center justify-center w-full">
-                    <div className="flex-1">
-                        <h4>Description</h4>
-                    </div>
-                    <div className="flex-1">
-                        <h4>Description</h4>
-                    </div>
-                    <div className="flex-1">
-                        <h4>Description</h4>
+                <div className="flex">
+                    <div className="flex h-150 w-3 bg-green-500 rounded-full"></div>
+                    <div className="p-10">
+                        <div>
+                            <h3>For Potential Clients...</h3>
+                            <div className="pt-8">
+                                <div className="text-[20px] pt-4 pb-2">Ready to work with us?</div>
+                                <div className="text-[20px] pt-2 pb-2">Fill Out this Form</div>
+                                <div className="text-[20px] pt-2 pb-2">Email us</div>
+                                <div className="text-[20px] pt-2 pb-2">Connect on LinkedIn</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="flex bg-background p-8 text-black-primary">
-            <div className="flex flex-col gap-2 p-8">
-                <h1 className="p-2">The Organization</h1>
-                <h4 className="p-2">In-depth description about organization</h4>
-            </div>
+            <div className="flex bg-background pl-30 pt-10 pb-40 gap-70 items-center">
+                <div className="grid">
+                    <h1>We would love to</h1>
+                    <h1>hear from you!</h1>
+                </div>
+                <div className="relative">
+                    <Image src="/images/person_with_phone.png" alt="background" className="object-cover object-center pr-10 z-30 relative bottom-5" width={570} height={380} />
+                    <div className="absolute left-30 top-3 h-90 w-120 bg-green-500 z-10"></div>
+                    <div className="absolute right-4 top-11 h-90 w-150 bg-green-200 z-0"></div>
+                </div>
             </div>
         </div>
     );
