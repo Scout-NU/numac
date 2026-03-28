@@ -17,7 +17,7 @@ export default function About() {
                     fill
                     className="object-cover"
                 />
-                <div className="relative z-10 text-black-primary flex flex-col items-center justify-center h-full w-full">
+                <div className="relative z-10 text-black-primary flex flex-col items-center justify-center h-full w-full p-4">
                     <div>
                         <h2 className="p-2">Mission Statement</h2>
                         <h3 className="p-2">To help our clients develop distinctive and lasting marketing solutions while empowering our students to learn and grow their marketing skillset​​.</h3>
