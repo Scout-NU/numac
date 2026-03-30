@@ -74,7 +74,7 @@ export default function HomePage() {
         <section className="px-6 py-12 md:px-12 md:py-20">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div className="pt-2">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-10">What is NUMA?</h2>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-10">What is NUMAC?</h2>
               <p className="text-base md:text-lg leading-8 max-w-sm">
                 Explanation
                 <br />
