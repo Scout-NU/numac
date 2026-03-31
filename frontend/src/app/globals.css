@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "din-2014-narrow";
-  src: url("/fonts/DIN-2014_Narrow-Bold.otf") format("opentype");
+  font-family: "din-2014";
+  src: url(https://db.onlinewebfonts.com/c/e0fa406cbe458b32a7ea4e9a379b85fc?family=DIN2014-Regular) format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-din: "din-2014-narrow", sans-serif;
+  --font-din: "din-2014", sans-serif;
   --font-nimbus: "nimbus-sans", sans-serif;
 }
 
@@ -62,16 +62,16 @@ body {
   h1 { 
     font-size: 64px; 
     color: var(--green-primary);
-    font-family: "din-2014-narrow", sans-serif;
+    font-family: "din-2014", sans-serif;
   }
   h2 { 
     font-size: 40px; 
     color: var(--green-primary);
-    font-family: "din-2014-narrow", sans-serif;
+    font-family: "din-2014", sans-serif;
   }
   h3 { 
     font-size: 36px;
-    font-family: "din-2014-narrow", sans-serif;
+    font-family: "din-2014", sans-serif;
   }
   h4 { font-size: 32px; }
   h5 { font-size: 24px; }

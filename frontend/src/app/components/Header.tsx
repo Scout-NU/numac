@@ -1,4 +1,3 @@
-
 export default function Header() {
    return (
      <header className="w-full bg-green-primary px-10 h-[44px] flex items-center justify-start gap-12">
