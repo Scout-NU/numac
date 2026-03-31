@@ -8,7 +8,7 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             <div className="max-w-lg">
               <h2 className="text-3xl md:text-4xl font-semibold mb-8">Mission Statement</h2>
-              <p className="text-base md:text-lg leading-8 text-[#2f2f2f]">
+              <p className="text-base md:text-lg leading-8 text-[#1f1f1f]">
                 To help our clients develop distinctive and lasting marketing
                 solutions while empowering our students to learn and grow their
                 marketing skillset.
@@ -20,9 +20,9 @@ export default function HomePage() {
         <section className="px-6 py-16 md:px-12 md:py-20">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-semibold mb-4">Explore our work</h2>
-              <p className="text-base md:text-lg">Caption</p>
-            </div>
+              <h2 className="text-4xl md:text-5xl font-semibold mb-4 text-[#2d2d2d]"> Explore our work </h2>
+              <p className="text-base md:text-lg text-[#2d2d2d]">Caption</p>
+              </div>
 
             <div className="relative flex items-center justify-center gap-4 md:gap-6">
               <button className="hidden md:flex h-12 w-12 items-center justify-center rounded-full bg-[#2f6f58] text-white shadow-lg text-xl">
@@ -78,7 +78,7 @@ export default function HomePage() {
               <p className="text-base md:text-lg leading-8 max-w-sm">
                 Explanation
                 <br />
-                word words more words
+                words
               </p>
             </div>
 
