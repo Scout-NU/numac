@@ -2,31 +2,33 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="min-h-screen w-full">\
-            <h1 className="pt-10 pl-30"><b>How to Get In Touch</b></h1>
-            <div className="flex bg-background pl-30 pt-10 pb-30 w-full">
-                <div className="flex flex-1">
-                    <div className="flex h-150 w-2 bg-green-500 rounded-full"></div>
-                    <div className="p-10">
-                        <div>
-                            <h3>For Potential Clients...</h3>
-                            <div className="pt-8">
-                                <div className="text-[20px] pt-4 pb-2">Ready to work with us?</div>
-                                <div className="text-[20px] pt-2 pb-2">Fill Out this Form</div>
-                                <div className="text-[20px] pt-2 pb-2">Email us</div>
-                                <div className="text-[20px] pt-2 pb-2">Connect on LinkedIn</div>
+        <div className="min-h-screen w-full">
+            <div className="bg-background w-full mx-auto pt-10 pl-20 pt-20 pb-20">
+                <h1><b>How to Get In Touch</b></h1>
+                <div className="flex pt-10">
+                    <div className="flex flex-1">
+                        <div className="flex h-150 w-2 bg-green-500 rounded-full"></div>
+                        <div className="p-10">
+                            <div>
+                                <h3>For Potential Clients...</h3>
+                                <div className="pt-8">
+                                    <div className="text-[20px] pt-4 pb-2">Ready to work with us?</div>
+                                    <div className="text-[20px] pt-2 pb-2">Fill Out this Form</div>
+                                    <div className="text-[20px] pt-2 pb-2">Email us</div>
+                                    <div className="text-[20px] pt-2 pb-2">Connect on LinkedIn</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-1">
-                    <div className="flex h-150 shrink-0 w-2 bg-green-500 rounded-full"></div>
-                    <div className="p-10">
-                        <div>
-                            <h3>For Potential Members...</h3>
-                            <div className="pt-8">
-                                <div className="text-[20px] pt-4 pb-2">NUMAC is open to all undergraduate students, regardless of major or year. We value diverse perspectives and welcome anyone with an interest in marketing, strategy, or consulting. </div>
-                                <div className="text-[20px] pt-4 pb-2">Recruitment happens toward the end of each semester (November in the fall and March in the spring). We host a week of events—such as case workshops, info sessions, and meet-and-greets with current members. Prospective members then submit a brief application form involving a case scenario and questions to get to know them better. After screening, selected participants will be invited to partake in two rounds of interviews, one behavioral and one case. </div></div>
+                    <div className="flex flex-1">
+                        <div className="flex h-150 shrink-0 w-2 bg-green-500 rounded-full"></div>
+                        <div className="p-10">
+                            <div>
+                                <h3>For Potential Members...</h3>
+                                <div className="pt-8">
+                                    <div className="text-[20px] pt-4 pb-2">NUMAC is open to all undergraduate students, regardless of major or year. We value diverse perspectives and welcome anyone with an interest in marketing, strategy, or consulting. </div>
+                                    <div className="text-[20px] pt-4 pb-2">Recruitment happens toward the end of each semester (November in the fall and March in the spring). We host a week of events—such as case workshops, info sessions, and meet-and-greets with current members. Prospective members then submit a brief application form involving a case scenario and questions to get to know them better. After screening, selected participants will be invited to partake in two rounds of interviews, one behavioral and one case. </div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
