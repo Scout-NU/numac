@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="min-h-screen w-full">
             <div className="flex bg-background p-8">
-                <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" /> 
+                <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" />
                 <div className="flex flex-col gap-2 p-8">
                     <h2 className="p-2"><b>About</b></h2>
                     <h5 className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</h5>
@@ -52,10 +52,10 @@ export default function About() {
                 </div>
             </div>
             <div className="flex bg-background p-8">
-            <div className="flex flex-col gap-2 p-8">
-                <h1 className="p-2"><b>The Organization</b></h1>
-                <h5 className="p-2">In-depth description about organization</h5>
-            </div>
+                <div className="flex flex-col gap-2 p-8">
+                    <h1 className="p-2"><b>The Organization</b></h1>
+                    <h5 className="p-2">In-depth description about organization</h5>
+                </div>
             </div>
         </div>
     );
