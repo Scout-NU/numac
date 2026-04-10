@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col gap-[15px]">
           <p className="font-sans text-[24px] font-light text-[#F7F4EC] mb-2">Socials</p>
           <a href="https://www.instagram.com/numaconsulting/" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">Instagram @numaconsulting</a>
-          <a href="https://www.linkedin.com/company/numaconsulting/posts/?feedView=all" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">LinkedIn LINK</a>
+          <a href="https://www.linkedin.com/company/numaconsulting/posts/?feedView=all" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">LinkedIn</a>
           <a href="#" className="font-sans text-[15px] font-light text-[#F7F4EC] hover:font-bold transition-all">content</a>
         </div>
       </div>

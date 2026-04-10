@@ -10,7 +10,7 @@ export default function About() {
                         <div className="flex h-150 w-2 bg-green-500 rounded-full"></div>
                         <div className="p-10">
                             <div>
-                                <h3>For Potential Clients...</h3>
+                                <h3><b>For Potential Clients...</b></h3>
                                 <div className="pt-8">
                                     <div className="text-[20px] pt-4 pb-2">Ready to work with us?</div>
                                     <div className="text-[20px] pt-2 pb-2">Fill Out this Form</div>
@@ -24,7 +24,7 @@ export default function About() {
                         <div className="flex h-150 shrink-0 w-2 bg-green-500 rounded-full"></div>
                         <div className="p-10">
                             <div>
-                                <h3>For Potential Members...</h3>
+                                <h3><b>For Potential Members...</b></h3>
                                 <div className="pt-8">
                                     <div className="text-[20px] pt-4 pb-2">NUMAC is open to all undergraduate students, regardless of major or year. We value diverse perspectives and welcome anyone with an interest in marketing, strategy, or consulting. </div>
                                     <div className="text-[20px] pt-4 pb-2">Recruitment happens toward the end of each semester (November in the fall and March in the spring). We host a week of events—such as case workshops, info sessions, and meet-and-greets with current members. Prospective members then submit a brief application form involving a case scenario and questions to get to know them better. After screening, selected participants will be invited to partake in two rounds of interviews, one behavioral and one case. </div></div>
@@ -76,7 +76,7 @@ export default function About() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
                                     <g filter="url(#filter0_d_444_591)">
                                         <g clip-path="url(#clip0_444_591)">
-                                            <path d="M80.5625 0H27.4375C14.4933 0 4 10.4933 4 23.4375V76.5625C4 89.5067 14.4933 100 27.4375 100H80.5625C93.5067 100 104 89.5067 104 76.5625V23.4375C104 10.4933 93.5067 0 80.5625 0Z" fill="#0A66C2" />
+                                            <path d="M80.5625 0H27.4375C14.4933 0 4 10.4933 4 23.4375V76.5625C4 89.5067 14.4933 100 27.4375 100H80.5625C93.5067 100 104 89.5067 104 76.5625V23.4375C104 10.4933 93.5067 0 80.5625 0Z" fill="#2A614B" />
                                             <path d="M76.1543 85.0332H87.5879C88.0022 85.0332 88.3996 84.8686 88.6926 84.5757C88.9856 84.2828 89.1503 83.8854 89.1504 83.4711L89.1562 59.3141C89.1562 46.6879 86.4355 36.9828 71.6805 36.9828C66.0715 36.7742 60.782 39.6656 57.9277 44.4937C57.9138 44.5172 57.8925 44.5354 57.8672 44.5457C57.842 44.5559 57.814 44.5576 57.7877 44.5505C57.7613 44.5434 57.738 44.5278 57.7214 44.5062C57.7047 44.4846 57.6955 44.4581 57.6953 44.4309V39.7109C57.6953 39.2965 57.5307 38.8991 57.2377 38.6061C56.9446 38.3131 56.5472 38.1484 56.1328 38.1484H45.2824C44.868 38.1484 44.4706 38.3131 44.1776 38.6061C43.8845 38.8991 43.7199 39.2965 43.7199 39.7109V83.4688C43.7199 83.8831 43.8845 84.2806 44.1776 84.5736C44.4706 84.8666 44.868 85.0312 45.2824 85.0312H56.7152C57.1296 85.0312 57.5271 84.8666 57.8201 84.5736C58.1131 84.2806 58.2777 83.8831 58.2777 83.4688V61.8387C58.2777 55.7227 59.4379 49.7996 67.0203 49.7996C74.4949 49.7996 74.5918 56.798 74.5918 62.2348V83.4707C74.5918 83.8851 74.7564 84.2825 75.0494 84.5756C75.3425 84.8686 75.7399 85.0332 76.1543 85.0332ZM18.8438 23.2922C18.8438 27.9266 22.659 31.7398 27.2937 31.7398C31.9273 31.7395 35.7402 27.9238 35.7402 23.2902C35.7395 18.6566 31.9262 14.8438 27.2922 14.8438C22.657 14.8438 18.8438 18.6578 18.8438 23.2922ZM21.5621 85.0332H33.0102C33.4246 85.0332 33.822 84.8686 34.115 84.5756C34.408 84.2825 34.5727 83.8851 34.5727 83.4707V39.7109C34.5727 39.2965 34.408 38.8991 34.115 38.6061C33.822 38.3131 33.4246 38.1484 33.0102 38.1484H21.5621C21.1477 38.1484 20.7503 38.3131 20.4573 38.6061C20.1642 38.8991 19.9996 39.2965 19.9996 39.7109V83.4707C19.9996 83.8851 20.1642 84.2825 20.4573 84.5756C20.7503 84.8686 21.1477 85.0332 21.5621 85.0332Z" fill="white" />
                                         </g>
                                     </g>
