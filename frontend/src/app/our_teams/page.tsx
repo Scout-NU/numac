@@ -1,6 +1,110 @@
+interface LeadershipMember {
+    src: string;
+    alt: string;
+    name: string;
+    title: string;
+    major: string;
+    coops: string | null;
+}
+
+
 export default function OurTeams() {
     const imgStyle = { width: "180px", height: "187.644px" };
     const cardStyle = { width: "180px" };
+
+    const leadershipRow1 = [
+        {
+            src: "/images/lauren_uy.png",
+            alt: "Lauren Uy",
+            name: "Lauren Uy",
+            title: "Executive Director",
+            major: "International Business, Marketing & Corporate Innovation",
+            coops: "Strategy Intern at VML & Operations at TikTok Shop",
+        },
+        {
+            src: "/images/yiru_zhou.png",
+            alt: "Yiru Zhou",
+            name: "Yiru Zhou",
+            title: "Associate Director",
+            major: "Business & Design",
+            coops: "Commercial Associate at Wayfair & Graphic Design at TJX",
+        },
+        {
+            src: "/images/kaia_thelwell.png",
+            alt: "Kaia Thelwell",
+            name: "Kaia Thelwell",
+            title: "Director of Consulting",
+            major: "Business & Psychology",
+            coops: "Marketing Cloud Consultant at IBM & Strategy Consultant at TRC",
+        },
+        {
+            src: "/images/tehya_ketvoravit.png",
+            alt: "Tehya Ketvoravit",
+            name: "Tehya Ketvoravit",
+            title: "Associate Director of Consulting",
+            major: "Business (Fintech), Minors in Data Science and Consulting",
+            coops: null,
+        },
+        {
+            src: "/images/antonella_eyl.png",
+            alt: "Antonella Eyl",
+            name: "Antonella Eyl",
+            title: "Director of Professional Development",
+            major: "Business Admin, Brand Management and Entrepreneurship",
+            coops: "Email Marketing at TJX & Marketing Co-op at Quickbase",
+        },
+    ];
+
+    const leadershipRow2 = [
+        {
+            src: "/images/julianna_moises.png",
+            alt: "Julianna Moises",
+            name: "Julianna Moises",
+            title: "Director of Talent Development",
+            major: "Business Admin, Marketing Analytics",
+            coops: "Investor Relations and Marketing Co-op at Charlesbank & Sales Enablement Co-op at EF",
+        },
+        {
+            src: "/images/sophia_singh.png",
+            alt: "Sophia Singh",
+            name: "Sophia Singh",
+            title: "Director of Client & Strategic Partnerships",
+            major: "Business, Marketing Analytics & Finance",
+            coops: "Public Relations at MFS Investment Management",
+        },
+        {
+            src: "/images/marissa_shapiro.png",
+            alt: "Marissa Shapiro",
+            name: "Marissa Shapiro",
+            title: "Co-Director of Marketing",
+            major: "Business, Marketing Analytics",
+            coops: "Commercial Associate at Wayfair & Operations at State Street",
+        },
+        {
+            src: "/images/daniel_lopez.png",
+            alt: "Daniel Lopez",
+            name: "Daniel Lopez",
+            title: "Co-Director of Marketing",
+            major: "Business, Marketing & Communications",
+            coops: null,
+        },
+    ];
+
+    const renderCard = (person: LeadershipMember, index: number) => (
+        <div className="flex flex-col" style={cardStyle} key={index}>
+            <img src={person.src} alt={person.alt} style={imgStyle} className="object-cover object-top" />
+            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>{person.name}</b></div>
+            <p className="pb-5"><i>{person.title}</i></p>
+            <p><b>Major:</b></p>
+            <p className="pb-5">{person.major}</p>
+            {person.coops && (
+                <>
+                    <p><b>Co-ops:</b></p>
+                    <p>{person.coops}</p>
+                </>
+            )}
+        </div>
+    );
 
     return (
         <div className="min-h-screen w-full pt-10 pr-30 pl-30 pb-20">
@@ -23,85 +127,10 @@ export default function OurTeams() {
                 <h2 className="pt-15 pb-5 text-center"><b>Meet Our Leadership</b></h2>
                 <div className="bg-background p-10 w-full">
                     <div className="flex gap-8 p-8 w-full items-start justify-center">
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/lauren_uy.png" alt="Lauren Uy" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Lauren Uy</b></div>
-                            <p className="pb-5"><i>Executive Director</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">International Business, Marketing & Corporate Innovation</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Strategy Intern at VML & Operations at TikTok Shop</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/yiru_zhou.png" alt="Yiru Zhou" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Yiru Zhou</b></div>
-                            <p className="pb-5"><i>Associate Director</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business & Design</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Commercial Associate at Wayfair & Graphic Design at TJX</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/kaia_thelwell.png" alt="Kaia Thelwell" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Kaia Thelwell</b></div>
-                            <p className="pb-5"><i>Director of Consulting</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business & Psychology</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Marketing Cloud Consultant at IBM & Strategy Consultant at TRC</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/tehya_ketvoravit.png" alt="Tehya Ketvoravit" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Tehya Ketvoravit</b></div>
-                            <p className="pb-5"><i>Associate Director of Consulting</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business (Fintech), Minors in Data Science and Consulting</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/antonella_eyl.png" alt="Antonella Eyl" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Antonella Eyl</b></div>
-                            <p className="pb-5"><i>Director of Professional Development</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business Admin, Brand Management and Entrepreneurship</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Email Marketing at TJX & Marketing Co-op at Quickbase</p>
-                        </div>
+                        {leadershipRow1.map((person, index) => renderCard(person, index))}
                     </div>
                     <div className="flex gap-8 p-8 w-full items-start justify-center">
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/julianna_moises.png" alt="Julianna Moises" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Julianna Moises</b></div>
-                            <p className="pb-5"><i>Director of Talent Development</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business Admin, Marketing Analytics</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Investor Relations and Marketing Co-op at Charlesbank & Sales Enablement Co-op at EF</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/sophia_singh.png" alt="Sophia Singh" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Sophia Singh</b></div>
-                            <p className="pb-5"><i>Director of Client & Strategic Partnerships</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business, Marketing Analytics & Finance</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Public Relations at MFS Investment Management</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/marissa_shapiro.png" alt="Marissa Shapiro" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Marissa Shapiro</b></div>
-                            <p className="pb-5"><i>Co-Director of Marketing</i></p>
-                            <p><b>Major:</b></p>
-                            <p className="pb-5">Business, Marketing Analytics</p>
-                            <p><b>Co-ops:</b></p>
-                            <p>Commercial Associate at Wayfair & Operations at State Street</p>
-                        </div>
-                        <div className="flex flex-col" style={cardStyle}>
-                            <img src="/images/daniel_lopez.png" alt="Daniel Lopez" style={imgStyle} className="object-cover object-top" />
-                            <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>Daniel Lopez</b></div>
-                            <p className="pb-5"><i>Co-Director of Marketing</i></p>
-                            <p><b>Major:</b></p>
-                            <p>Business, Marketing & Communications</p>
-                        </div>
+                        {leadershipRow2.map((person, index) => renderCard(person, index))}
                         <div className="flex flex-col" style={cardStyle}></div>
                     </div>
                 </div>
