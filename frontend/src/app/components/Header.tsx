@@ -8,7 +8,7 @@ export default function Header() {
       <nav className="flex gap-8">
         {[
           { label: "Who we are", href: "/about" },
-          { label: "What we do", href: "" },
+          { label: "What we do", href: "/whatwedo" },
           { label: "Our Teams", href: "" },
           { label: "Contact", href: "/contact" },
         ].map((link) => (
