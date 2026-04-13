@@ -9,8 +9,8 @@ interface LeadershipMember {
 
 
 export default function OurTeams() {
-    const imgStyle = { width: "180px", height: "187.644px" };
-    const cardStyle = { width: "180px" };
+    const imgStyle = { width: "210px", height: "210px" };
+    const cardStyle = { width: "210px" };
 
     const leadershipRow1 = [
         {
@@ -110,7 +110,13 @@ export default function OurTeams() {
         <div className="min-h-screen w-full pt-10 pr-30 pl-30 pb-20">
             <div className="bg-background w-full mx-auto">
                 <h1 className="pt-10 pb-10"><b>Welcome to NUMAC</b></h1>
-                <img src="https://placehold.co/700x400" alt="placeholder" className="w-full mt-4" />
+                <div className="flex justify-center items-center">
+                    <img
+                        src="/images/team.png"
+                        alt="Team Photo"
+                        className="w-[1800px] h-[850px] object-cover object-top"
+                    />
+                </div>
                 <h2 className="pt-15 pb-10 text-center"><b>Team Structure</b></h2>
                 <h5 style={{ color: "var(--green-primary)" }}>1. Project Manager</h5>
                 <br />
@@ -126,10 +132,10 @@ export default function OurTeams() {
                 <hr className="border-5 border-green-primary rounded-full" />
                 <h2 className="pt-15 pb-5 text-center"><b>Meet Our Leadership</b></h2>
                 <div className="bg-background p-10 w-full">
-                    <div className="flex gap-8 p-8 w-full items-start justify-center">
+                    <div className="flex gap-30 p-8 w-full items-start justify-center">
                         {leadershipRow1.map((person, index) => renderCard(person, index))}
                     </div>
-                    <div className="flex gap-8 p-8 w-full items-start justify-center">
+                    <div className="flex gap-30 p-8 w-full items-start justify-center">
                         {leadershipRow2.map((person, index) => renderCard(person, index))}
                         <div className="flex flex-col" style={cardStyle}></div>
                     </div>
