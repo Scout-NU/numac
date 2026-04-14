@@ -1,11 +1,18 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
-    <header className="w-full bg-green-primary px-10 h-[44px] flex items-center justify-start gap-12">
-      <span className="text-[#F7F4EC] font-sans text-[20px] font-bold">
-        LOGO
-      </span>
-      <nav className="flex gap-8">
+    <header className="w-full bg-green-primary h-11 flex items-center">
+      <img
+        src="/logo.svg"
+        alt="Logo"
+        className="w-40 h-11 shrink-0"
+      />
+      <nav className="flex items-center gap-14 ml-[21px]">
         {[
           { label: "Who we are", href: "/about" },
           { label: "What we do", href: "/whatwedo" },
@@ -15,7 +22,9 @@ export default function Header() {
           <a
             key={link.label}
             href={link.href}
-            className="text-beige-primary font-nimbus text-sm hover:font-bold transition-all"
+            className={`w-20 text-center text-[#F7F4EC] text-xs font-nimbus ${
+              pathname === link.href ? "font-bold" : "font-normal"
+            }`}
           >
             {link.label}
           </a>
