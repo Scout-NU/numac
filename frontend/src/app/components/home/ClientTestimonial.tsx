@@ -20,7 +20,7 @@ const ClientTestimonial: React.FC<ClientTestimonialProps> = ({
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="min-h-[220px] w-full rounded-[18px] border-l-4 border-[#1f7a5a] bg-[#b8c9c1] p-5 shadow-sm text-left"
+        className="min-h-[220px] w-full rounded-[18px] border-l-8 border-green-primary bg-[#b8c9c1] p-5 shadow-sm text-left"
       >
         <h3 className="mb-1 text-xl font-medium text-[#245848]">{name}</h3>
         <p className="mb-6 text-sm text-[#245848]">{company}</p>
@@ -34,19 +34,12 @@ const ClientTestimonial: React.FC<ClientTestimonialProps> = ({
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="w-full max-w-lg rounded-[18px] border-l-4 border-[#1f7a5a] bg-[#b8c9c1] p-8 shadow-xl"
+            className="w-full max-w-lg rounded-[18px] border-l-8 border-green-primary bg-[#b8c9c1] p-8 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <h3 className="mb-1 text-xl font-medium text-[#245848]">{name}</h3>
             <p className="mb-6 text-sm text-[#245848]">{company}</p>
-            <div className="mb-3 text-4xl font-bold leading-none text-[#1f1f1f]">"</div>
             <p className="text-sm leading-7 text-[#1f1f1f]">{fullTestimonial}</p>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="mt-6 text-sm font-medium text-[#1f7a5a] hover:underline"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
