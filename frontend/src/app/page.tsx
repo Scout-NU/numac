@@ -1,64 +1,108 @@
-import Image from "next/image";
+import ClientTestimonial from './components/home/ClientTestimonial';
+import ExploreOurWorkCarousel from './components/home/ExploreOurWorkCarousel';
 
-export default function Home() {
+const projects = [
+  { name: 'Matcha Café Maiko', description: 'Description', href: '/project/1' },
+  { name: 'Project 2', description: 'Description', href: '/project/2' },
+  { name: 'Project 3', description: 'Description', href: '/project/3' },
+  { name: 'Project 4', description: 'Description', href: '/project/4' },
+];
+
+const testimonials = [
+  {
+    name: 'Joel',
+    company: 'Owner of R3VIVE Fitness',
+    preview: 'Their team brought a level of professionalism, creativity, and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.',
+    fullTestimonial: 'Their team brought a level of professionalism, creativity. and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.',
+  },
+  {
+    name: 'Henry',
+    company: 'Owner of Matcha Cafe Maiko Fenway',
+    preview: 'Working with NUMAC was a great experience for our team at Matcha Café Maiko.',
+    fullTestimonial: 'Working with NUMAC was a great experience for our team at Matcha Café Maiko.',
+  },
+  {
+    name: 'Name1',
+    company: 'Company1',
+    preview: '',
+    fullTestimonial: '',
+  },
+  {
+    name: 'Name2',
+    company: 'Company2',
+    preview: '',
+    fullTestimonial: '',
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-[#f5f1ea] text-[#1f1f1f]">
+      <main className="w-full">
+        {/* Mission Statement */}
+        <section className="bg-[#89a79d] px-8 py-16 md:px-20 md:py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="max-w-3xl">
+              <h2 className="mb-6 font-din text-4xl font-medium text-[#f4efe7] md:text-5xl">
+                Mission Statement
+              </h2>
+              <p className="max-w-4xl text-lg leading-8 text-[#f4efe7] md:text-xl md:leading-10">
+                We aim to help our clients develop distinctive and lasting marketing
+                solutions while empowering our students to learn and grow their
+                marketing skillset.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Explore Our Work */}
+        <section className="px-6 py-16 md:px-12 md:py-20">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 text-center">
+              <h2 className="font-din text-5xl text-green-primary md:text-6xl">
+                Explore our work
+              </h2>
+            </div>
+            <ExploreOurWorkCarousel projects={projects} />
+          </div>
+        </section>
+
+        {/* What is NUMAC */}
+        <section className="px-6 py-14 md:px-12 md:py-20">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-12 md:grid-cols-2">
+            <div className="pt-1">
+              <h2 className="mb-12 text-3xl font-semibold text-[#1f1f1f] md:text-5xl">
+                What is NUMAC?
+              </h2>
+              <p className="max-w-md text-lg leading-9 text-[#1f1f1f]">
+                NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.
+              </p>
+            </div>
+            <div>
+              <div className="h-[280px] w-full bg-[#d9d9d9] md:h-[390px]" />
+            </div>
+          </div>
+        </section>
+
+        {/* Client Testimonies */}
+        <section className="px-6 pb-20 pt-8 md:px-12 md:pb-24">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="mb-14 text-center font-din text-5xl text-green-primary md:text-6xl">
+              Client Testimonies
+            </h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4 items-stretch">
+              {testimonials.map((t) => (
+                <ClientTestimonial
+                  key={t.name + t.company}
+                  name={t.name}
+                  company={t.company}
+                  preview={t.preview}
+                  fullTestimonial={t.fullTestimonial}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
