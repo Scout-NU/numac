@@ -22,14 +22,14 @@ const testimonials = [
     fullTestimonial: 'Working with NUMAC was a great experience for our team at Matcha Café Maiko.',
   },
   {
-    name: 'Name',
-    company: 'Company',
+    name: 'Name1',
+    company: 'Company1',
     preview: '',
     fullTestimonial: '',
   },
   {
-    name: 'Name',
-    company: 'Company',
+    name: 'Name2',
+    company: 'Company2',
     preview: '',
     fullTestimonial: '',
   },
