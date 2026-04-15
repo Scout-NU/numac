@@ -2,7 +2,7 @@ import ClientTestimonial from './components/home/ClientTestimonial';
 import ExploreOurWorkCarousel from './components/home/ExploreOurWorkCarousel';
 
 const projects = [
-  { name: 'Project 1', description: 'Description', href: '/project/1' },
+  { name: 'Matcha Café Maiko', description: 'Description', href: '/project/1' },
   { name: 'Project 2', description: 'Description', href: '/project/2' },
   { name: 'Project 3', description: 'Description', href: '/project/3' },
   { name: 'Project 4', description: 'Description', href: '/project/4' },
@@ -13,7 +13,7 @@ const testimonials = [
     name: 'Joel',
     company: 'Owner of R3VIVE Fitness',
     preview: 'Their team brought a level of professionalism, creativity, and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.',
-    fullTestimonial: 'Their team brought a level of professionalism, creativity, and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.',
+    fullTestimonial: 'Their team brought a level of professionalism, creativity. and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.',
   },
   {
     name: 'Henry',
@@ -75,9 +75,7 @@ export default function HomePage() {
                 What is NUMAC?
               </h2>
               <p className="max-w-md text-lg leading-9 text-[#1f1f1f]">
-                Explanation
-                <br />
-                word words more words
+                NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.
               </p>
             </div>
             <div>
@@ -92,7 +90,7 @@ export default function HomePage() {
             <h2 className="mb-14 text-center font-din text-5xl text-green-primary md:text-6xl">
               Client Testimonies
             </h2>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4 items-stretch">
               {testimonials.map((t) => (
                 <ClientTestimonial
                   key={t.name + t.company}

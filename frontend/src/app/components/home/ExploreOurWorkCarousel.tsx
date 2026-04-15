@@ -57,7 +57,7 @@ const ExploreOurWorkCarousel: React.FC<ExploreOurWorkCarouselProps> = ({ project
 
       <div className="mt-14 flex justify-center">
         <Link
-          href="/what-we-do"
+          href="/projects"
           className="grid place-items-center rounded-[24px] bg-green-primary px-10 py-5 shadow-md md:px-14"
         >
           <svg viewBox="0 0 220 40" className="h-9 w-auto">

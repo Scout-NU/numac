@@ -10,7 +10,7 @@ interface ExploreOurWorkCardProps {
 
 const ExploreOurWorkCard: React.FC<ExploreOurWorkCardProps> = ({ name, description, href }) => {
   return (
-    <div className="overflow-hidden rounded-md border-l-4 border-green-primary bg-[#cfc4b2] shadow-md">
+    <div className="overflow-hidden rounded-md border-l-[10px] border-green-primary bg-[#cfc4b2] shadow-md">
       <div className="p-4">
         <div className="relative mb-4 h-40 w-full overflow-hidden rounded-md">
           <div className="h-full w-full bg-[#ddd6ca]" />
