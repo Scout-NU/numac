@@ -4,22 +4,22 @@ const projects = [
     {
         title: "Matcha Cafe Maíko",
         description: "A 6-member consulting team worked with Matcha Cafe Maiko Boston to drive winter revenue stabilization and deepen engagement within the Northeastern University community.",
-        href: "/whatwedo/matcha-cafe-maiko",
+        href: "/projects/matcha-cafe-maiko",
     },
     {
         title: "R3VIVE Fitness",
         description: "The team worked with R3VIVE Fitness to conduct a competitive benchmarking analysis, build a corporate outreach package, design a 3-month dual-platform digital marketing strategy, and recommend implementable corporate wellness program features.",
-        href: "/whatwedo/r3vive-fitness",
+        href: "/projects/r3vive-fitness",
     },
     {
         title: "Madhrasi",
         description: "The team worked to advise Madhrasi, a South Indian chai brand distributed through cafés, online, and farmers markets, on retail expansion and café acquisition strategy.",
-        href: "/whatwedo/madhrasi",
+        href: "/projects/madhrasi",
     },
     {
         title: "Candlefish",
         description: "A 5-person consulting team developed a growth strategy for Candlefish's Boston expansion, analyzing 300K+ addressable consumers across 4 target segments to increase workshop sign-ups.",
-        href: "/whatwedo/candlefish",
+        href: "/projects/candlefish",
     },
 ];
 

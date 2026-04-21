@@ -15,7 +15,7 @@ export default function Header() {
       <nav className="flex items-center gap-14 ml-[21px]">
         {[
           { label: "Who we are", href: "/about" },
-          { label: "What we do", href: "/whatwedo" },
+          { label: "What we do", href: "/projects" },
           { label: "Our Teams", href: "" },
           { label: "Contact", href: "/contact" },
         ].map((link) => (
