@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export default function MatchaCafeMaiko() {
+export const metadata: Metadata = { title: "Candlefish" };
+
+export default function Candlefish() {
     return (
         <div className="min-h-screen w-full bg-[#F7F4EC]">
             {/* Back button */}
-            <div className="absolute top-[77px] right-[89px] flex items-center gap-1">
-                <Link href="/whatwedo" className="text-[#2A614B] text-xl font-normal flex items-center gap-1" style={{ fontFamily: "Inter, sans-serif" }}>
+            <div className="absolute top-[77px] right-[89px]">
+                <Link href="/projects" className="text-[#2A614B] text-xl font-normal" style={{ fontFamily: "Inter, sans-serif" }}>
                     ← Back
                 </Link>
             </div>
@@ -14,18 +17,16 @@ export default function MatchaCafeMaiko() {
             <div className="flex flex-col items-center gap-24 pt-[105px] pb-[100px]">
                 <div className="w-[1104px] flex flex-col items-end gap-14">
 
-                    {/* Title + image */}
+                    {/* Title + image + overview */}
                     <div className="self-stretch flex flex-col gap-14">
                         <h1 className="text-[#2A614B] text-6xl font-bold" style={{ fontFamily: "DIN Alternate, sans-serif" }}>
-                            Matcha Café Maiko
+                            Candlefish
                         </h1>
                         <div className="w-full h-[569px] bg-[#D9D9D9]" />
+                        <p className="text-[#1C1917] text-2xl font-normal leading-[29px]">
+                            Partnered with Candlefish to advise on their Boston expansion growth strategy using consumer segmentation, competitive benchmarking, and digital audits to identify key opportunities to increase workshop sign-ups. Developed data-driven growth pillars, a conversion-focused marketing framework, and a data integration roadmap to support targeted outreach and project a 20–30% lift in group bookings.
+                        </p>
                     </div>
-
-                    {/* Overview */}
-                    <p className="self-stretch text-[#1C1917] text-2xl font-normal leading-[29px]">
-                        Partnered with Matcha Cafe Maiko Boston to boost winter revenue and student engagement through market research, competitive analysis, and three targeted seasonal campaigns. Developed a campus partnership and catering strategy that drove new customer acquisition and generated strong social engagement, including 580+ interactions on a single post.
-                    </p>
 
                     {/* Impact heading */}
                     <p className="self-stretch text-center text-[#2A614B] text-3xl font-bold" style={{ fontFamily: "DIN Alternate, sans-serif" }}>
@@ -34,11 +35,13 @@ export default function MatchaCafeMaiko() {
 
                     {/* Impact body */}
                     <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                        A 6-member consulting team worked with Matcha Cafe Maiko Boston to drive winter revenue stabilization and deepen engagement within the Northeastern University community. The team conducted primary and secondary market research, surveying Northeastern students and benchmarking 8 direct and indirect competitors on pricing, product differentiation, ambiance, and digital presence to identify high-impact growth opportunities.
+                        A 5-person consulting team developed a growth strategy for Candlefish&apos;s Boston expansion, analyzing 300K+ addressable consumers across 4 target segments to increase workshop sign-ups.
                         <br /><br />
-                        The team designed and executed 3 seasonal marketing campaigns (Hoosky collaboration, Winter Drink Special, Finals "Study Break" menu) to increase cold-season foot traffic and position Matcha Maiko as a premium, student-focused brand.
+                        The team conducted competitive benchmarking of 7 experiential retail competitors (5 within a 10-minute radius), identifying 4 strategic gaps and delivering 5 data-backed growth pillars (personalization, event strategy, omnichannel optimization, corporate outreach, sustainability storytelling).
                         <br /><br />
-                        The team developed a campus vendor partnership strategy targeting student organizations with recurring event budgets, building a pricing model, outreach plan, and catering framework to drive bulk orders and generate net-new customers; supported social promotion initiatives that achieved 580+ Instagram engagements on a single post.
+                        The team audited and restructured multi-platform digital strategy (Instagram, TikTok, LinkedIn), leveraging industry research (68% consumer trust in aesthetic content; 4/5 LinkedIn users influence business purchases) to design a conversion-focused content and influencer ROI tracking framework.
+                        <br /><br />
+                        The team built a data-integration roadmap linking workshop capacity, AOV, conversion rates, and scent-level sales trends to marketing initiatives, projecting 20–30% lift in group bookings through targeted B2B and university outreach activation.
                     </p>
 
                     {/* Photos and divider */}
@@ -63,10 +66,9 @@ export default function MatchaCafeMaiko() {
                             Client Testimonial
                         </p>
                         <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                            "Working with NUMAC was a great experience for our team at Matcha Café Maiko. They delivered a thoughtful market research report that helped us better understand student perception and identify clear opportunities to increase awareness and repeat visits. They also created a catering menu that made it easier for us to approach campus orders and group events.
-                            <br /><br />
-                            Beyond the deliverables, the team brought strong ideas, connected us with Hoosky for additional student advertising, and offered practical recommendations we could actually execute. Overall, NUMAC felt less like a class project and more like a real consulting team that genuinely cared about helping our business grow."
-                            {" "}<span className="text-[#2A614B] font-bold">- Henry, Owner of Matcha Cafe Maiko Fenway</span>
+                            &quot;Input here&quot;
+                            <br />
+                            <span className="text-[#2A614B] font-bold">- Name, Owner of Candlefish</span>
                         </p>
                     </div>
 

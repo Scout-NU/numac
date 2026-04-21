@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = { title: "R3VIVE Fitness" };
 
 export default function R3VIVEFitness() {
     return (
         <div className="min-h-screen w-full bg-[#F7F4EC]">
             {/* Back button */}
             <div className="absolute top-[77px] right-[89px] flex items-center gap-1">
-                <Link href="/whatwedo" className="text-[#2A614B] text-xl font-normal flex items-center gap-1" style={{ fontFamily: "Inter, sans-serif" }}>
+                <Link href="/projects" className="text-[#2A614B] text-xl font-normal flex items-center gap-1" style={{ fontFamily: "Inter, sans-serif" }}>
                     ← Back
                 </Link>
             </div>
@@ -32,11 +35,11 @@ export default function R3VIVEFitness() {
 
                     {/* Impact body */}
                     <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                        The team conducted a competitive benchmarking analysis of 5+ corporate wellness providers (including F45, Orange Theory, Inner City Weightlifting, ZeroCater, and Barry's Bootcamp), identifying critical market gaps and delivering a data-backed market research report spanning audience segmentation, competitor SWOT analysis, and actionable differentiation strategies.
+                        The team conducted a competitive benchmarking analysis of 5+ corporate wellness providers (including F45, Orange Theory, Inner City Weightlifting, ZeroCater, and Barry&apos;s Bootcamp), identifying critical market gaps and delivering a data-backed market research report spanning audience segmentation, competitor SWOT analysis, and actionable differentiation strategies.
                         <br /><br />
                         The team built a comprehensive corporate outreach package — including a geo-targeted database of high-fit Boston companies (Cruz Companies, Shawmut Design, Dimock Center, MassMutual, Takeda, Klaviyo), 4 customizable email templates, and a tiered pitch deck with 3 service tiers ($500–$3,500/month) — to accelerate B2B pipeline development.
                         <br /><br />
-                        The team designed a 3-month dual-platform digital marketing strategy across Instagram and LinkedIn, incorporating a structured posting calendar (3x/week), platform-specific content frameworks, and a full-funnel paid ad strategy (awareness → consideration → conversion) to grow R3VIVE's LinkedIn following (19 followers) and Instagram reach (745 followers) among corporate decision-makers.
+                        The team designed a 3-month dual-platform digital marketing strategy across Instagram and LinkedIn, incorporating a structured posting calendar (3x/week), platform-specific content frameworks, and a full-funnel paid ad strategy (awareness → consideration → conversion) to grow R3VIVE&apos;s LinkedIn following (19 followers) and Instagram reach (745 followers) among corporate decision-makers.
                         <br /><br />
                         The team recommended 7 implementable corporate wellness program features — including tiered pricing, a digital wellness platform, mental health support, wellness challenges, health education workshops, provider partnerships, and ROI reporting analytics — to position R3VIVE as a credible and scalable B2B wellness partner.
                     </p>
@@ -63,15 +66,15 @@ export default function R3VIVEFitness() {
                             Client Testimonial
                         </p>
                         <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                            "Working with NUMAC has been one of the most impactful decisions we've made for R3VIVE Fitness. Their team brought a level of professionalism, creativity, and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.
+                            &quot;Working with NUMAC has been one of the most impactful decisions we&apos;ve made for R3VIVE Fitness. Their team brought a level of professionalism, creativity, and strategic thinking that exceeded our expectations and helped elevate our position in the health and wellness space.
                             <br /><br />
                             From the start, NUMAC approached our growth goals with genuine curiosity and energy. They conducted thorough market research to help us better understand our positioning in the health and wellness space — not just as a gym, but as a potential partner for corporate clients looking to invest in the well-being of their employees.
                             <br /><br />
                             NUMAC identified key opportunities in the local business community, crafted compelling outreach frameworks, and helped us articulate our value proposition in a way that resonates with HR teams and decision-makers at organizations that prioritize employee wellness programs. The research they delivered gave us a clear, data-informed roadmap for approaching these conversations with confidence.
                             <br /><br />
-                            Beyond the strategy, their marketing materials and messaging were sharp, on-brand, and purpose-built for the audiences we're trying to reach. It's clear that the NUMAC team takes ownership and pride in their work and care about results.
+                            Beyond the strategy, their marketing materials and messaging were sharp, on-brand, and purpose-built for the audiences we&apos;re trying to reach. It&apos;s clear that the NUMAC team takes ownership and pride in their work and care about results.
                             <br /><br />
-                            We're proud to have partnered with NUMAC and grateful for the foundation they've helped us build."
+                            We&apos;re proud to have partnered with NUMAC and grateful for the foundation they&apos;ve helped us build.&quot;
                             {" "}<span className="text-[#2A614B] font-bold">- Joel, Owner of R3VIVE Fitness</span>
                         </p>
                     </div>

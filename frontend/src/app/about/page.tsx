@@ -1,10 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = { title: "About" };
 
 export default function About() {
     return (
         <div className="min-h-screen w-full">
             <div className="flex bg-background p-8">
-                <img className="p-10" src="https://placehold.co/600x400" alt="placeholder" />
+                <Image className="p-10" src="https://placehold.co/600x400" alt="placeholder" width={600} height={400} unoptimized />
                 <div className="flex flex-col gap-2 p-8">
                     <h2 className="p-2"><b>About</b></h2>
                     <h5 className="p-2">NUMA Consulting is the destination club on campus to grow your marketing consulting skills, attracting the top talent at Northeastern and providing opportunities for them to learn and grow within the club.</h5>
