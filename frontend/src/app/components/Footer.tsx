@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full bg-green-primary h-80 relative px-[106px] pt-[67px]">
-      <h3 className="font-din text-4xl font-semibold text-[#F7F4EC] mb-[63px]">Let's connect</h3>
+      <h3 className="font-din text-4xl font-semibold text-[#F7F4EC] mb-[63px]">Let&apos;s connect</h3>
       <div className="flex gap-[136px]">
         <div className="flex flex-col gap-2.5">
           <p className="font-nimbus text-2xl font-normal text-[#F7F4EC] mb-0">Contact</p>

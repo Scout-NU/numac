@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export default function Candlefish() {
+export const metadata: Metadata = { title: "Madhrasi" };
+
+export default function Madhrasi() {
     return (
         <div className="min-h-screen w-full bg-[#F7F4EC]">
             {/* Back button */}
             <div className="absolute top-[77px] right-[89px]">
-                <Link href="/whatwedo" className="text-[#2A614B] text-xl font-normal" style={{ fontFamily: "Inter, sans-serif" }}>
+                <Link href="/projects" className="text-[#2A614B] text-xl font-normal" style={{ fontFamily: "Inter, sans-serif" }}>
                     ← Back
                 </Link>
             </div>
@@ -17,11 +20,11 @@ export default function Candlefish() {
                     {/* Title + image + overview */}
                     <div className="self-stretch flex flex-col gap-14">
                         <h1 className="text-[#2A614B] text-6xl font-bold" style={{ fontFamily: "DIN Alternate, sans-serif" }}>
-                            Candlefish
+                            Madhrasi
                         </h1>
                         <div className="w-full h-[569px] bg-[#D9D9D9]" />
                         <p className="text-[#1C1917] text-2xl font-normal leading-[29px]">
-                            Partnered with Candlefish to advise on their Boston expansion growth strategy using consumer segmentation, competitive benchmarking, and digital audits to identify key opportunities to increase workshop sign-ups. Developed data-driven growth pillars, a conversion-focused marketing framework, and a data integration roadmap to support targeted outreach and project a 20–30% lift in group bookings.
+                            Partnered with Madhrasi to advise on retail expansion and café acquisition strategy through data-driven market analysis and customer research. Developed a targeted expansion model and integrated sales plan including B2B outreach, seasonal launches, and retention strategies to drive growth and reduce revenue concentration risk.
                         </p>
                     </div>
 
@@ -32,13 +35,13 @@ export default function Candlefish() {
 
                     {/* Impact body */}
                     <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                        A 5-person consulting team developed a growth strategy for Candlefish's Boston expansion, analyzing 300K+ addressable consumers across 4 target segments to increase workshop sign-ups.
+                        The team worked to advise Madhrasi, a South Indian chai brand distributed through cafés, online, and farmers markets, on retail expansion and café acquisition strategy.
                         <br /><br />
-                        The team conducted competitive benchmarking of 7 experiential retail competitors (5 within a 10-minute radius), identifying 4 strategic gaps and delivering 5 data-backed growth pillars (personalization, event strategy, omnichannel optimization, corporate outreach, sustainability storytelling).
+                        The team analyzed an 800+ retail partner database, segmenting cafés by state, city, rating, review count, and social following to build a 3-tier expansion model prioritizing highest-ROI geographic clusters.
                         <br /><br />
-                        The team audited and restructured multi-platform digital strategy (Instagram, TikTok, LinkedIn), leveraging industry research (68% consumer trust in aesthetic content; 4/5 LinkedIn users influence business purchases) to design a conversion-focused content and influencer ROI tracking framework.
+                        The team conducted customer journey and café adoption research (awareness → retention), identifying key drivers such as small-batch trials, supplier trust, and seasonal purchasing patterns; translated insights into retention-focused loyalty, subscription, and sampling strategies to mitigate revenue concentration risk.
                         <br /><br />
-                        The team built a data-integration roadmap linking workshop capacity, AOV, conversion rates, and scent-level sales trends to marketing initiatives, projecting 20–30% lift in group bookings through targeted B2B and university outreach activation.
+                        The team developed an integrated Sales Growth & Café Expansion Plan including B2B outreach decks, seasonal launch strategy, and product bundling recommendations to address winter revenue volatility, regional preference differences, and product-line dependency.
                     </p>
 
                     {/* Photos and divider */}
@@ -63,9 +66,9 @@ export default function Candlefish() {
                             Client Testimonial
                         </p>
                         <p className="self-stretch text-[#212121] text-2xl font-normal leading-[29px]">
-                            "Input here"
+                            &quot;Input here&quot;
                             <br />
-                            <span className="text-[#2A614B] font-bold">- Name, Owner of Candlefish</span>
+                            <span className="text-[#2A614B] font-bold">- Name, Owner of Madhrasi</span>
                         </p>
                     </div>
 

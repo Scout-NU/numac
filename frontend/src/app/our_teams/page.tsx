@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+
+export const metadata: Metadata = { title: "Our Teams" };
+
 interface LeadershipMember {
     src: string;
     alt: string;
@@ -9,7 +14,6 @@ interface LeadershipMember {
 
 
 export default function OurTeams() {
-    const imgStyle = { width: "210px", height: "210px" };
     const cardStyle = { width: "210px" };
 
     const leadershipRow1 = [
@@ -92,7 +96,7 @@ export default function OurTeams() {
 
     const renderCard = (person: LeadershipMember, index: number) => (
         <div className="flex flex-col" style={cardStyle} key={index}>
-            <img src={person.src} alt={person.alt} style={imgStyle} className="object-cover object-top" />
+            <Image src={person.src} alt={person.alt} width={210} height={210} className="object-cover object-top" />
             <div className="pb-2 pt-5" style={{ fontSize: "20px" }}><b>{person.name}</b></div>
             <p className="pb-5"><i>{person.title}</i></p>
             <p><b>Major:</b></p>
@@ -111,10 +115,12 @@ export default function OurTeams() {
             <div className="bg-background w-full mx-auto">
                 <h1 className="pt-10 pb-10"><b>Welcome to NUMAC</b></h1>
                 <div className="flex justify-center items-center">
-                    <img
+                    <Image
                         src="/images/team.png"
                         alt="Team Photo"
-                        className="w-[1800px] h-[850px] object-cover object-top"
+                        width={1800}
+                        height={850}
+                        className="object-cover object-top"
                     />
                 </div>
                 <h2 className="pt-15 pb-10 text-center"><b>Team Structure</b></h2>
@@ -124,11 +130,11 @@ export default function OurTeams() {
                 <br />
                 <h5 style={{ color: "var(--green-primary)" }}>2. Senior Consultant (Strategy & Creative)</h5>
                 <br />
-                <h5><b>Senior Consultants</b> are expected to have a higher level of responsibility within the team, leveraging their experience to handle more complex projects. This role is best suited for those who are at least in their second year and have relevant consulting, internship, or co-op experience. <b>Senior Strategists</b> lead early conversations, define project direction, and refine strategic outputs. They ensure the strategy is clear, compelling, and aligned with client goals. <b>Senior Creatives</b> own the brand's visual identity and ensure consistency across all materials. They guide junior creatives and finalize deliverables with a strong design vision.</h5>
+                <h5><b>Senior Consultants</b> are expected to have a higher level of responsibility within the team, leveraging their experience to handle more complex projects. This role is best suited for those who are at least in their second year and have relevant consulting, internship, or co-op experience. <b>Senior Strategists</b> lead early conversations, define project direction, and refine strategic outputs. They ensure the strategy is clear, compelling, and aligned with client goals. <b>Senior Creatives</b> own the brand&apos;s visual identity and ensure consistency across all materials. They guide junior creatives and finalize deliverables with a strong design vision.</h5>
                 <br />
                 <h5 style={{ color: "var(--green-primary)" }}>3. Junior Consultant (Strategy & Creative)</h5>
                 <br />
-                <h5 className="pb-20"><b>Junior Consultants</b> are entry-level members of our team who are eager to dive into the world of consulting. This role is perfect for those with little to no prior experience or for consultants interested in joining the club. <b>Strategy Consultants</b> shape the direction of the project. <b>Junior Strategists</b> conduct research, analyze customer behavior, and help build the foundation for brand recommendations. Creative Consultants bring the brand to life visually. Junior Creatives help design mockups, set the brand's look and feel, and support the creation of the final deck.</h5>
+                <h5 className="pb-20"><b>Junior Consultants</b> are entry-level members of our team who are eager to dive into the world of consulting. This role is perfect for those with little to no prior experience or for consultants interested in joining the club. <b>Strategy Consultants</b> shape the direction of the project. <b>Junior Strategists</b> conduct research, analyze customer behavior, and help build the foundation for brand recommendations. Creative Consultants bring the brand to life visually. Junior Creatives help design mockups, set the brand&apos;s look and feel, and support the creation of the final deck.</h5>
                 <hr className="border-5 border-green-primary rounded-full" />
                 <h2 className="pt-15 pb-5 text-center"><b>Meet Our Leadership</b></h2>
                 <div className="bg-background p-10 w-full">

@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import ClientTestimonial from './components/home/ClientTestimonial';
+
+export const metadata: Metadata = { title: "Home" };
 import ExploreOurWorkCarousel from './components/home/ExploreOurWorkCarousel';
 
 const projects = [
-  { name: 'Matcha Café Maiko', description: 'Description', href: '/project/1' },
-  { name: 'Project 2', description: 'Description', href: '/project/2' },
-  { name: 'Project 3', description: 'Description', href: '/project/3' },
-  { name: 'Project 4', description: 'Description', href: '/project/4' },
+  { name: 'Matcha Café Maiko', description: 'Description', href: '/projects/matcha-cafe-maiko' },
+  { name: 'Candlefish', description: 'Description', href: '/projects/candlefish' },
+  { name: 'Madhrasi', description: 'Description', href: '/projects/madhrasi' },
+  { name: 'R3vive Fitness', description: 'Description', href: '/projects/r3vive-fitness' },
 ];
 
 const testimonials = [
@@ -23,13 +26,13 @@ const testimonials = [
   },
   {
     name: 'Name1',
-    company: 'Company1',
+    company: 'Madhrasi',
     preview: '',
     fullTestimonial: '',
   },
   {
     name: 'Name2',
-    company: 'Company2',
+    company: 'Candlefish',
     preview: '',
     fullTestimonial: '',
   },
